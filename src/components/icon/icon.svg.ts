@@ -1,8 +1,12 @@
 /* eslint-disable import/no-anonymous-default-export */
 import { ReactComponent as chevronsDown } from './svgs/chevrons-down.svg';
+import { ReactComponent as shield } from './svgs/shield.svg';
+import { ReactComponent as sun } from './svgs/sun.svg';
 import { ReactComponent as x } from './svgs/x.svg';
 
 export default {
     chevronsDown,
+    shield,
+    sun,
     x,
 };

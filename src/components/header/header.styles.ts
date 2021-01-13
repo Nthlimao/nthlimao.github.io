@@ -7,7 +7,7 @@ const HeaderStyles = styled.div`
     height: 100vh;
     max-width: 100%;
     background-image: url("${process.env.PUBLIC_URL}/images/banner.jpg");
-    margin-bottom: 60px;
+    margin-bottom: 80px;
 `;
 
 export const ContentHeader = styled.div`
