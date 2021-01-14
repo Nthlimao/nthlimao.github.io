@@ -1,15 +1,17 @@
 import React from "react";
-import { Header, About, Section } from "./components";
+import { ThemeProvider } from "styled-components";
+import { theme, MainStyles } from "./styles";
+import { Navbar, Header, About } from "./components";
 
 const Main = () => {
     return (
-        <div>
-            <Header />
-            <Section id="sobre">
-                Sobre Min
-            </Section>
-            <About />
-        </div>
+        <ThemeProvider theme={theme}>
+            <MainStyles>
+                <Navbar />
+                <Header />
+                <About />
+            </MainStyles>
+        </ThemeProvider>
     );
 };
 

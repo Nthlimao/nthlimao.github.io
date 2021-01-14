@@ -10,36 +10,46 @@ const HeaderStyles = styled.div`
     margin-bottom: 80px;
 `;
 
-export const ContentHeader = styled.div`
+export const HeaderContainer = styled.div`
     position: absolute;
     display: flex;
     align-items: center;
-    justify-content: center;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+    padding-bottom: 8%;
     background: rgba(20, 20, 24, 0.95);
 `;
 
-export const TypewriterWrapper = styled.div`
+export const HeaderSubtitle = styled.h3`
+    color: ${(props) => props.theme.colorNeutralLight};
+    font-family: ${(props) => props.theme.fontFamilyHighlight};
+    font-size: 32px;
+    line-height: 32px;
+    padding: 0 10px;
+    margin-bottom: 20px;
+`;
+
+export const HeaderTitle = styled.h1`
     .Typewriter {
         .Typewriter__cursor {
-            font-family: "Montserrat", sans-serif;
-            font-size: 90px;
+            font-family: ${(props) => props.theme.fontFamilyHighlight};
+            font-size: 80px;
+            line-height: 80px;
             font-weight: bold;
-            color: #ffe659;
+            color: ${(props) => props.theme.colorRaibownSeventh};
         }
-    
+
         .Typewriter__wrapper {
-            font-family: "Montserrat", sans-serif;
-            font-size: 90px;
+            font-family: ${(props) => props.theme.fontFamilyHighlight};
+            font-size: 80px;
+            line-height: 80px;
             font-weight: bold;
-            background: linear-gradient(90deg,#4fcbcb 0,#29cbd8 15%,#24badc 30%,#947dbb 45%,#f896c3 55%,#ffcc7d 75%,#ffe659 100%);
+            background: ${(props) => props.theme.gradientRaibown};
             background-clip: text;
             -webkit-background-clip: text;
-            -webkit-text-stroke: 4px transparent;
-            color: #1a1a1f;
+            -webkit-text-fill-color: transparent;
             padding: 0 5px;
         }
     }

@@ -1,89 +1,17 @@
 import React from "react";
-import Progress from "../progress";
-import Icon from "../icon";
 import AboutStyles, {
-    ContainerContent,
-    ContainerResume,
-    CardGame,
-    CardRole,
-    CardPhoto,
-    CardTitle,
-    SkillTable,
-    SkillColumn,
-    SkillRow,
-    Balloon,
+    AboutContainer,
+    AboutText,
+    AboutImage,
 } from "./about.styles";
 
 const About = () => {
     return (
-        <AboutStyles>
+        <AboutStyles id="sobre">
             <div className="container">
-                <ContainerContent>
-                    <CardGame>
-                        <CardRole>Developer FullStack</CardRole>
-                        <CardPhoto
-                            src={`${process.env.PUBLIC_URL}/images/profile_picture.png`}
-                            alt="nathalia"
-                        />
-                        <div>
-                            <CardTitle>
-                                <Icon icon="shield" color="#ffffff" />
-                                softskills
-                            </CardTitle>
-                            <SkillTable>
-                                <SkillColumn shrink={3}>
-                                    <SkillRow>
-                                        <p>Autodidata</p>
-                                    </SkillRow>
-                                    <SkillRow>
-                                        <p>Liderança</p>
-                                    </SkillRow>
-                                    <SkillRow>
-                                        <p>Resiliência</p>
-                                    </SkillRow>
-                                    <SkillRow>
-                                        <p>Team Work</p>
-                                    </SkillRow>
-                                    <SkillRow>
-                                        <p>Comunicação</p>
-                                    </SkillRow>
-                                    <SkillRow>
-                                        <p>Criatividade</p>
-                                    </SkillRow>
-                                    <SkillRow>
-                                        <p>Empatia</p>
-                                    </SkillRow>
-                                </SkillColumn>
-                                <SkillColumn>
-                                    <SkillRow>
-                                        <Progress width="90%" />
-                                    </SkillRow>
-                                    <SkillRow>
-                                        <Progress width="80%" />
-                                    </SkillRow>
-                                    <SkillRow>
-                                        <Progress width="95%" />
-                                    </SkillRow>
-                                    <SkillRow>
-                                        <Progress width="75%" />
-                                    </SkillRow>
-                                    <SkillRow>
-                                        <Progress width="60%" />
-                                    </SkillRow>
-                                    <SkillRow>
-                                        <Progress width="70%" />
-                                    </SkillRow>
-                                    <SkillRow>
-                                        <Progress width="40%" />
-                                    </SkillRow>
-                                </SkillColumn>
-                            </SkillTable>
-                        </div>
-                    </CardGame>
-                    <ContainerResume>
-                        <h3>
-                            <Icon icon="sun" color="#4afad3" /> in a few words
-                        </h3>
+                <AboutContainer>
+                    <AboutText>
+                        <h2>Sobre mim</h2>
                         <p>
                             Olá, meu nome é Nathalia Cristina de Lima, tenho 24
                             anos, nascida e criada na cidade do Recife,
@@ -123,16 +51,11 @@ const About = () => {
                             um hobby virou minha base de conhecimento para algo
                             bem maior.
                         </p>
-                    </ContainerResume>
-                    <Balloon>
-                        <h4>english level</h4>
-                        <p>
-                            <b>Intermediário</b>, bom entendimento de fala e
-                            leitura, boa conversação e apenas carente na
-                            grámatica, mas sem grandes problemas.
-                        </p>
-                    </Balloon>
-                </ContainerContent>
+                    </AboutText>
+                    <AboutImage>
+                        <div className="nath-cover"></div>
+                    </AboutImage>
+                </AboutContainer>
             </div>
         </AboutStyles>
     );
