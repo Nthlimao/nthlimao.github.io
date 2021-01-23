@@ -3,6 +3,7 @@ import styled from 'styled-components';
 interface IconProps {
     color?: string;
     width?: string;
+    height?: string;
 }
 
 const IconStyles = styled.div<IconProps>`
@@ -11,6 +12,7 @@ const IconStyles = styled.div<IconProps>`
     color: ${(props) => props?.color ? props?.color : '#000000'};
     svg {
         ${(props) => props?.width && `width: ${props?.width};`}
+        ${(props) => props?.height && `height: ${props?.height};`}
     }
 `;
 

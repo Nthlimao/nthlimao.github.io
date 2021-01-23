@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import Icon from "../../icon";
 import LinkStyles from "./link.styles";
 
 type LinkProps = {
@@ -9,7 +10,7 @@ type LinkProps = {
     onHover: Function;
     id?: string;
     isActive?: boolean;
-    isFixed?: boolean;
+    icon?: string;
 };
 
 const Link = ({
@@ -20,7 +21,7 @@ const Link = ({
     onLeave,
     id = "",
     isActive = false,
-    isFixed = false,
+    icon = "sun",
 }: LinkProps) => {
     const linkRef = useRef(null);
 
@@ -36,10 +37,15 @@ const Link = ({
             onClick={onClick}
             onMouseEnter={handleMouse}
             onMouseLeave={onLeave}
-            fixed={isFixed}
             className={isActive ? "active" : ""}
         >
-            {children}
+            <Icon
+                icon={icon}
+                width="18px"
+                height="18px"
+                color={isActive ? "#FFFFFF" : "rgba(255, 255, 255, 0.7)"}
+            />
+            <span>{children}</span>
         </LinkStyles>
     );
 };

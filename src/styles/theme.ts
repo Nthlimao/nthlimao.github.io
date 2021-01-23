@@ -4,8 +4,10 @@ const theme = {
     colorNeutralDark: "#1A1A1F",
     colorNeutralMedium: "#ADB5BD",
     colorNeutralLight: "#E9ECEF",
-    colorNeutralLightest: "#F8F9FA",
+    colorNeutralLightest: "#F7F8F8",
     colorNeutralWhite: "#FFFFFF",
+    colorBrandDark: "#00CB9E",
+    colorBrandPure: "#4AFAD3",
     colorRaibownFirst: "#4AFAD3",
     colorRaibownSecond: "#4FCBCB",
     colorRaibownThird: "#24BADC",
@@ -16,6 +18,7 @@ const theme = {
     gradientRaibown: "linear-gradient(120deg, #4AFAD3 0, #4FCBCB 17%, #24BADC 34%, #947DBB 51%,#F896C3 68%, #FFCC7D 85%, #FFE659 100%)",
     fontFamilyBase: "'Hind', sans-serif",
     fontFamilyHighlight: "'Montserrat', sans-serif",
+    fontFamilySpecial: "'Olivier'",
 
 };
 

@@ -6,14 +6,15 @@ type IconType = {
     icon: string;
     color?: string;
     width?: string;
+    height?: string;
 };
 
-const Icon = ({ icon = "x", color, width }: IconType) => {
+const Icon = ({ icon = "x", color, width, height }: IconType) => {
     let SelectedIcon: any = null;
     if (icon) SelectedIcon = SvgIcons[icon];
 
     return (
-        <IconStyles color={color} width={width}>
+        <IconStyles color={color} width={width} height={height}>
             {SelectedIcon && <SelectedIcon />}
         </IconStyles>
     );

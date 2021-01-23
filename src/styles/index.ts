@@ -6,6 +6,7 @@ export const MainStyles = styled.div`
     font-family: ${(props) => props.theme.fontFamilyBase};
     max-width: 100%;
     width: 100%;
+    background-color: ${(props) => props.theme.colorNeutralDark};
 
     img {
         max-width: 100%;
@@ -14,9 +15,9 @@ export const MainStyles = styled.div`
     .container {
         position: relative;
         width: 100%;
-        max-width: 1280px;
-        padding-right: 15px;
-        padding-left: 15px;
+        max-width: 640px;
+        padding-right: 10px;
+        padding-left: 10px;
         margin: 0 auto;
         box-sizing: border-box;
     }
