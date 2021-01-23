@@ -77,3 +77,12 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: "Olivier";
+    src: url("olivier.ttf") format("ttf"),
+        url("olivier-webfont.woff2") format("woff2"),
+        url("olivier-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
