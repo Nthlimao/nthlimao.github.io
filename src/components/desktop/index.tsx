@@ -9,13 +9,13 @@ import DesktopStyles from "./desktop.styles";
 
 const Desktop = () => {
     const slidesLeft = [
-        { hash: "home", slide: <PresentationAppend /> },
-        { hash: "sobre", slide: <AboutContent /> },
+        { hash: "home", slide: <PresentationContent /> },
+        { hash: "sobre", slide: <AboutAppend /> },
     ];
 
     const slidesRight = [
-        { hash: "sobre", slide: <AboutAppend /> },
-        { hash: "home", slide: <PresentationContent /> },
+        { hash: "sobre", slide: <AboutContent /> },
+        { hash: "home", slide: <PresentationAppend /> },
     ];
     return (
         <DesktopStyles>

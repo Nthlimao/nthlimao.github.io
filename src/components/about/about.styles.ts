@@ -56,11 +56,11 @@ export const AboutContentStyles = styled.div`
         content: "";
         position: absolute;
         top: 50%;
-        right: 0;
+        left: 0;
         width: 70%;
         padding-top: 70%;
         border-radius: 100%;
-        transform: translate(50%, -50%);
+        transform: translate(-50%, -50%);
         background: ${(props) => props.theme.gradientRaibown};
         z-index: 0;
         opacity: 0.2;
@@ -69,11 +69,11 @@ export const AboutContentStyles = styled.div`
         content: "";
         position: absolute;
         top: 50%;
-        right: 0;
-        width: calc(70% - 10px);
+        left: 0;
+        width: calc(70% - 15px);
         padding-top: calc(70% - 10px);
         border-radius: 100%;
-        transform: translate(50%, -50%);
+        transform: translate(-50%, -50%);
         background: ${(props) => props.theme.colorNeutralDark};
         z-index: 1;
     }
@@ -89,14 +89,14 @@ export const AboutContentInner = styled.div`
         line-height: 48px;
         font-weight: 400;
         margin-bottom: 20px;
-        text-align: right;
+        text-align: left;
     }
     p {
         color: ${(props) => props.theme.colorNeutralLightest};
         font-size: 18px;
         font-weight: 300;
         line-height: 25px;
-        text-align: right;
+        text-align: justify;
     }
 `;
 
@@ -112,11 +112,11 @@ export const AboutAppendStyles = styled.div`
         content: "";
         position: absolute;
         top: 50%;
-        left: 0;
+        right: 0;
         width: 70%;
         padding-top: 70%;
         border-radius: 100%;
-        transform: translate(-50%, -50%);
+        transform: translate(50%, -50%);
         background: ${(props) => props.theme.gradientRaibown};
         z-index: 0;
         opacity: 0.2;
@@ -125,11 +125,11 @@ export const AboutAppendStyles = styled.div`
         content: "";
         position: absolute;
         top: 50%;
-        left: 0;
-        width: calc(70% - 10px);
+        right: 0;
+        width: calc(70% - 15px);
         padding-top: calc(70% - 10px);
         border-radius: 100%;
-        transform: translate(-50%, -50%);
+        transform: translate(50%, -50%);
         background: ${(props) => props.theme.colorNeutralDark};
         z-index: 1;
     }

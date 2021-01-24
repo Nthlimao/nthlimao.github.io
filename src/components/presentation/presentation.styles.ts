@@ -10,28 +10,29 @@ const PresentationStyles = styled.div`
 `;
 
 export const ContentStyles = styled.div`
-    padding: 20px 30px;
+    width: 100%;
 `;
 
 export const PresentationTitle = styled.h1`
     font-family: ${(props) => props.theme.fontFamilyHighlight};
-    font-size: 38px;
-    line-height: 46px;
+    font-size: 64px;
+    line-height: 68px;
+    font-weight: normal;
     color: ${(props) => props.theme.colorNeutralWhite};
     .Typewriter {
         .Typewriter__cursor {
             font-family: ${(props) => props.theme.fontFamilyHighlight};
-            font-size: 54px;
-            line-height: 70px;
+            font-size: 64px;
+            line-height: 68px;
             font-weight: bold;
             color: ${(props) => props.theme.colorRaibownSeventh};
         }
 
         .Typewriter__wrapper {
             font-family: ${(props) => props.theme.fontFamilyHighlight};
-            font-size: 54px;
-            line-height: 70px;
-            font-weight: bold;
+            font-size: 64px;
+            line-height: 68px;
+            font-weight: normal;
             background: ${(props) => props.theme.gradientRaibown};
             background-clip: text;
             -webkit-background-clip: text;

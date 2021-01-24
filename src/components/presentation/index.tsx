@@ -10,38 +10,40 @@ export const PresentationContent = () => {
     return (
         <PresentationStyles>
             <ContentStyles>
-                <PresentationTitle>
-                    Olá,
-                    <br />
-                    Eu sou a Nathalia,
-                    <br />
-                    <Typewriter
-                        options={{
-                            loop: true,
-                        }}
-                        onInit={(typewriter) => {
-                            typewriter
-                                .typeString("web developer")
-                                .pauseFor(1100)
-                                .deleteAll()
-                                .typeString("mobile developer")
-                                .pauseFor(1200)
-                                .deleteAll()
-                                .typeString("front-end developer")
-                                .pauseFor(1200)
-                                .deleteAll()
-                                .typeString("back-end developer")
-                                .pauseFor(1200)
-                                .deleteAll()
-                                .typeString("developer fullstack")
-                                .pauseFor(600)
-                                .typeString(" ;)")
-                                .pauseFor(2000)
-                                .deleteAll()
-                                .start();
-                        }}
-                    />
-                </PresentationTitle>
+                <div className="container">
+                    <PresentationTitle>
+                        Olá,
+                        <br />
+                        Eu sou a Nathalia,
+                        <br />
+                        <Typewriter
+                            options={{
+                                loop: true,
+                            }}
+                            onInit={(typewriter) => {
+                                typewriter
+                                    .typeString("web developer")
+                                    .pauseFor(1400)
+                                    .deleteAll()
+                                    .typeString("mobile developer")
+                                    .pauseFor(1400)
+                                    .deleteAll()
+                                    .typeString("front-end developer")
+                                    .pauseFor(1400)
+                                    .deleteAll()
+                                    .typeString("back-end developer")
+                                    .pauseFor(1400)
+                                    .deleteAll()
+                                    .typeString("developer fullstack")
+                                    .pauseFor(600)
+                                    .typeString(" ;)")
+                                    .pauseFor(4000)
+                                    .deleteAll()
+                                    .start();
+                            }}
+                        />
+                    </PresentationTitle>
+                </div>
             </ContentStyles>
         </PresentationStyles>
     );
