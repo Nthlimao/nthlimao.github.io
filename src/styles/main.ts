@@ -7,9 +7,18 @@ const MainStyles = styled.div`
     position: relative;
     width: 100%;
     max-width: 1200px;
-    padding: 0 30px;
+    padding-left: 30px;
+    padding-right: 30px;
     margin: 0 auto;
     box-sizing: border-box;
+
+    &.container-lg {
+      max-width: 1020px;
+    }
+
+    &.container-md {
+      max-width: 780px;
+    }
   }
 `;
 
