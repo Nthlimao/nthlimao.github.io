@@ -1,13 +1,12 @@
+"use client";
+
+import HeroBanner from "@/components/HeroBanner/HeroBanner";
+
 const Index = () => {
   return (
-    <main>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio similique
-        nobis expedita! Corporis tempora aliquid, aperiam provident molestias
-        debitis nostrum atque vel quae delectus accusamus nobis veritatis, natus
-        quos tenetur.
-      </p>
-    </main>
+    <div>
+      <HeroBanner />
+    </div>
   );
 };
 
