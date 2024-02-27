@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import MainLayout from "@/components/global/MainLayout/MainLayout";
 
-import "./globals.css";
+import "@/styles/globals.css";
 
 export const metadata: Metadata = {
   title: "Nathalia Lima",
