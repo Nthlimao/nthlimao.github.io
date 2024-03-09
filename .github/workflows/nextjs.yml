@@ -23,7 +23,7 @@ jobs:
       - name: Install and Build 🔧
         uses: actions/setup-node@v4
       - run: npm install
-      - run: touch out/
+      - run: touch ./out
         env:
           CI: true
 
