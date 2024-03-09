@@ -27,14 +27,14 @@ jobs:
       - name: Install 🪄 and Build 🔧
         uses: actions/setup-node@v4
       - run: npm install
-      - run: ${{ steps.detect-package-manager.outputs.runner }} next build
+      - run: npm build
         env:
           CI: true
       - name: Upload Artifact 🎨
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./out
-          
+
   deploy:
     environment:
       name: github-pages
