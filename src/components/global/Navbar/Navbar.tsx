@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 import NavbarStyles, {
   NavbarInner,
   NavbarMenu,
@@ -10,12 +8,11 @@ const Navbar = () => {
   return (
     <NavbarStyles>
       <NavbarInner className="container">
-        <Image
+        <img
           src="/assets/images/nthlimao.png"
           alt="Next.js Logo"
           width={120.44}
           height={40}
-          priority
         />
         <NavbarMenu>
           <NavbarMenuItem>Start</NavbarMenuItem>
