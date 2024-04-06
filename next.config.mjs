@@ -5,6 +5,9 @@ const nextConfig = {
     unoptimized: true,
     path: "/",
   },
+  compiler: {
+    styledComponents: true,
+  },
 };
 
 export default nextConfig;

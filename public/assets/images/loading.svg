@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid"
+    width="80" height="80">
+    <g data-idx="1">
+        <circle cx="20" cy="57.5" r="5" fill="#78FCDE" data-idx="2">
+            <animate
+                attributeType="XML"
+                attributeName="cy"
+                dur="2s"
+                repeatCount="indefinite"
+                values="57.5;42.5;57.5;57.5"
+                keyTimes="0; 0.1; 0.2; 1"
+            />
+        </circle>
+        <circle cx="35" cy="57.5" r="5" fill="#77D5EA" data-idx="4">
+            <animate
+                attributeType="XML"
+                attributeName="cy"
+                dur="2s"
+                values="57.5;42.5;57.5;57.5"
+                keyTimes="0; 0.1; 0.2; 1"
+                repeatCount="indefinite"
+                begin="0.15s" />
+        </circle>
+        <circle cx="50" cy="57.5" r="5" fill="#AF9ECC" data-idx="6">
+            <animate
+                attributeType="XML"
+                attributeName="cy"
+                dur="2s"
+                values="57.5;42.5;57.5;57.5"
+                keyTimes="0; 0.1; 0.2; 1"
+                repeatCount="indefinite"
+                begin="0.3s" />
+        </circle>
+        <circle cx="65" cy="57.5" r="5" fill="#FAB1D2" data-idx="8">
+            <animate
+                attributeType="XML"
+                attributeName="cy"
+                dur="2s"
+                values="57.5;42.5;57.5;57.5"
+                keyTimes="0; 0.1; 0.2; 1"
+                repeatCount="indefinite"
+                begin="0.45s"
+            />
+        </circle>
+        <circle cx="80" cy="57.5" r="5" fill="#FFED83" data-idx="10">
+            <animate
+                attributeType="XML"
+                attributeName="cy"
+                dur="2s"
+                values="57.5;42.5;57.5;57.5"
+                keyTimes="0; 0.1; 0.2; 1"
+                repeatCount="indefinite"
+                begin="0.6s" />
+        </circle>
+        <g data-idx="12"></g>
+    </g>
+</svg>
