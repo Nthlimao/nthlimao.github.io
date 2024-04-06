@@ -1,7 +1,12 @@
 import styled from "styled-components";
 
 const NavbarStyles = styled.div`
+  position: absolute;
   padding: 20px 0;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
   margin-bottom: 20px;
 `;
 

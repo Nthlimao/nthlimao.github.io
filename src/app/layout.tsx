@@ -4,7 +4,7 @@ import MainLayout from "@/components/global/MainLayout/MainLayout";
 import "@/styles/globals.css";
 
 export const metadata: Metadata = {
-  title: "Nathalia Lima",
+  title: "‎ ‎ nthlimão",
   description: "Nathalia Lima website",
 };
 
@@ -15,6 +15,7 @@ interface IRootLayout {
 const RootLayout = ({ children }: Readonly<IRootLayout>) => {
   return (
     <html lang="en">
+      <link rel="icon" type="image/x-icon" href="/favicon.png"></link>
       <body>
         <MainLayout>{children}</MainLayout>
       </body>

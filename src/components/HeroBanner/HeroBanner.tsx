@@ -1,24 +1,33 @@
-import HeroBannerStyles, {
-  HeroBannerTitle,
-  HeroBannerTitleRow,
-  SparklesIcon,
-  TitleMarked,
-  UnicornIcon,
-} from "./HeroBanner.styles";
+import Typewriter, {
+  TypewriterClass,
+  Options as TypewriterOptions,
+} from "typewriter-effect";
+
+import HeroBannerStyles, { HeroBannerTitle } from "./HeroBanner.styles";
 
 const HeroBanner = () => {
+  const initTypewriter = (typewriter: TypewriterClass) => {
+    typewriter
+      .pauseFor(1000)
+      .typeString("software engineer,")
+      .pauseFor(800)
+      .typeString("<br>fullstack")
+      .pauseFor(400)
+      .deleteChars(9)
+      .typeString("<b>front-end</b> developer,")
+      .pauseFor(800)
+      .typeString("<br>design enthusiast.")
+      .start();
+  };
+
+  const optionsTypewriter: TypewriterOptions = {
+    loop: false,
+  };
+
   return (
-    <HeroBannerStyles className="container container-lg">
-      <HeroBannerTitle>
-        <HeroBannerTitleRow>software engineer,</HeroBannerTitleRow>
-        <HeroBannerTitleRow>
-          <UnicornIcon />
-          <TitleMarked>front-end</TitleMarked> developer,
-        </HeroBannerTitleRow>
-        <HeroBannerTitleRow>
-          design enthusiast
-          <SparklesIcon />
-        </HeroBannerTitleRow>
+    <HeroBannerStyles>
+      <HeroBannerTitle className="container">
+        <Typewriter onInit={initTypewriter} options={optionsTypewriter} />
       </HeroBannerTitle>
     </HeroBannerStyles>
   );
