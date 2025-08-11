@@ -12,7 +12,6 @@ The website was built using the following technologies:
 
 - **React**: JavaScript library for building user interfaces.
 - **Next.JS**: React framework for server-side rendering and generating static pages.
-- **Styled-components**: Library for styling components with CSS-in-JS.
 - **Git**: For source code version control.
 - **GitHub Pages**: For free website hosting
 

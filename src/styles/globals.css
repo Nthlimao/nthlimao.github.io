@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 @import url("./fonts/henrietta.css");
 @import url("./fonts/sequelSansDisplay.css");
 
@@ -5,7 +7,6 @@
 
 html,
 body,
-div,
 span,
 applet,
 object,
@@ -120,6 +121,12 @@ body {
   color: white;
   background-color: #18181e;
   font-size: 16px;
+  font-family: "Sequel Sans Display", sans-serif;
+}
+.container {
+  max-width: 1200px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 @-webkit-keyframes fadeOut {
